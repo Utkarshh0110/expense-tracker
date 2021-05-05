@@ -3,7 +3,6 @@ import {
   TextField,
   Grid,
   Button,
-  Typography,
   FormControl,
   InputLabel,
   Select,
@@ -11,7 +10,6 @@ import {
 } from "@material-ui/core";
 import useStyles from "./styles";
 import { ExpenseTrackerContext } from "../../../context/context";
-import { FormatBoldTwoTone } from "@material-ui/icons";
 import { v4 as uuidv4 } from "uuid";
 import {
   incomeCategories,
@@ -46,11 +44,6 @@ const Form = () => {
   };
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12}>
-        <Typography align="center" variant="subtitle2" gutterBottom>
-          ....
-        </Typography>
-      </Grid>
       <Grid item xs={6}>
         <FormControl fullWidth>
           <InputLabel>Type</InputLabel>

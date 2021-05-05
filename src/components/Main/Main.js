@@ -1,11 +1,10 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 import {
   Card,
   CardHeader,
   CardContent,
   Typography,
   Grid,
-  Divider,
 } from "@material-ui/core";
 import useStyles from "./styles";
 import Form from "./Form/Form";
@@ -18,20 +17,18 @@ const Main = () => {
   return (
     <div>
       <Card className={classes.root}>
-        <CardHeader title="Expense Tracker" subheader="Powered by Speechly" />
+        <CardHeader title="Expense Tracker" subheader="Developed by Utkarsh Tiwari" />
         <CardContent>
           <Typography align="center" variant="h5">
-            {`Total balance is $ ${balance}`}
+            {`Current Expenditure is $ ${balance}`}
           </Typography>
           <Typography
             align="center"
-            variant="subtitle1"
+            // variant="subtitle1"
             style={{ lineHeight: "1.5rem", marginTop: "20px" }}
           >
-            {/* Try saying: Add income for $100 in Category Salary for Monday... */}
-            Keep track of your daily expenses..
+            <i>Keep track of your daily expenses..</i>
           </Typography>
-          <Divider />
           {/* FORM */}
           <Form />
         </CardContent>

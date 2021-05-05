@@ -16,7 +16,7 @@ const useTransactions = (title) => {
   );
   const categories = title === "Income" ? incomeCategories : expenseCategories;
 
-  console.log({transactionPerType, total, categories})
+  // console.log({transactionPerType, total, categories})
 
   transactionPerType.forEach((t) => {
       const category = categories.find((c) => c.type === t.category)
